@@ -1,10 +1,6 @@
 import yfinance as yf
-import time
-import datetime
-import numpy
 
-#get stock price from Yahoo
-
+# Figures out % change from closing price of previous day and current stock price
 def price_diff(preClose, lastPrice):
     p1 = float(lastPrice)
     p2 = float(preClose)
@@ -18,6 +14,7 @@ def price_diff(preClose, lastPrice):
         pctDiff = 0
         return ("%.2f" %pctDiff) + "%"
 
+# takes in a list of ticker symbols, gets the current price and previous day closing price, outputs dictionary
 def getTickerData(stocks):
     tickerData = {}
     for x in stocks:
