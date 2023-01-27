@@ -23,10 +23,6 @@ class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
-	
-	# This is the command I use when running this srcipt for my modules.
-	# The modules are 16x32 pixles and I have 5 of them chained together
-        #--led-rows 16 --led-cols 32 --led-chain 5 --led-slowdown-gpio 1 --led-brightness 50
         
         #get config file that has the stocks we want to see
         path = "config.txt"
