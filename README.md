@@ -12,6 +12,9 @@ https://www.aliexpress.com/item/32997717322.html?spm=a2g0o.order_list.order_list
 
 Project is run from a RaspberryPI 3B
 
+
+Enter stock symbols in the config.txt file, the script will then grab from that file and pull ticker info and send it to the display. Any symbols added or removed from config.txt will be captured by the script so no need to restart it if changes are made.
+
 Example for running this script:
 stock.py --led-rows 16 --led-cols 32 --led-chain 5 --led-slowdown-gpio 1 --led-brightness 50
 
